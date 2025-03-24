@@ -1,7 +1,7 @@
 /* Reset some basic styling */
 * {
   margin: 0;
-  padding: 0;
+  padding: 100;
   box-sizing: border-box;
 }
 
@@ -47,7 +47,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background: url('https://wallpaperaccess.com/full/2939803.jpg') no-repeat center center/cover;
+  background: url('https://wallpaperaccess.com/full/1673432.jpg') no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 100px 0;
@@ -107,7 +107,28 @@ h2 {
 }
 
 
+#portfolio .section-container {
+  text-align: left; /* Align content to the left */
+  max-width: 800px; /* Optional: Limit the width for a better view */
+  margin: 0 auto; /* Center the section on large screens */
+}
 
+.portfolio-item {
+  margin-bottom: 30px; /* Space between items */
+}
+
+.portfolio-item h3 {
+  font-size: 1.5em; /* Make the heading slightly larger */
+}
+
+.portfolio-item ul {
+  list-style-type: disc; /* Use bullets for the list */
+  margin-left: 20px; /* Indent the list */
+}
+
+.portfolio-item p, .portfolio-item ul {
+  margin-bottom: 15px;
+}
 
 
 
@@ -223,20 +244,76 @@ h2 {
 
 
 
+
 /* Terms and Conditions */
+#termsandconditions {
+  text-align: middle; /* Aligns all text within the section to the left */
+}
+
 .conditions {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.conditions {
+  align-items: flex-start; /* Align items to the left */
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-style: italic;
 }
+
+.conditions p,
+.conditions h3,
+.conditions ul,
+.conditions form {
+  text-align: left; /* Ensures all paragraphs, headings, lists, and forms are aligned left */
+}
+
+/* Optional: Add more specific style for form elements if needed */
+#termsForm label,
+#termsForm input,
+#termsForm button {
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+/* Privacy Policy Section */
+#privacypolicy {
+  padding: 40px;
+  background-color: #f9f9f9;
+  margin-top: 40px;
+}
+
+#privacypolicy h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#privacypolicy h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #444;
+}
+
+#privacypolicy p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+#privacypolicy .section-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 
 
 
